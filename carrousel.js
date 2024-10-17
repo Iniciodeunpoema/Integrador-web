@@ -3,10 +3,10 @@ let currentIndex = 0;
 
 document.getElementById('next').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % images.length;
-    document.getElementById('carousel-img').src = images[currentIndex];
+    document.getElementById('carrousel-img').src = images[currentIndex];
 });
 
 document.getElementById('previous').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
-    document.getElementById('carousel-img').src = images[currentIndex];
+    document.getElementById('carrousel-img').src = images[currentIndex];
 });
