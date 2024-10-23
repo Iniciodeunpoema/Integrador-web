@@ -1,24 +1,28 @@
-const imagenes = ['1.jpg', '2.jpg', '3.jpg', ]; 
-  
-  let indiceActual = 0;
-  
-  const imagenCarrusel = document.getElementById('imagenCarrusel');
-  const anteriorButton = document.getElementById('anterior');
-  const siguienteButton = document.getElementById('siguiente');
-  
-  function actualizarImagen() {
-    imagenCarrusel.src = imagenes[indiceActual];
-  }
-  
-  siguienteButton.addEventListener('click', () => {
-    indiceActual = (indiceActual + 1) % imagenes.length; 
-    actualizarImagen();
-  });
-  
-  anteriorButton.addEventListener('click', () => {
+const imagenes = [
+    'imagen1.jpg',
+    'imagen2.jpg',
+    'imagen3.jpg'
+];
+
+let indiceActual = 0;
+
+const imagenCarrusel = document.getElementById('imagenCarrusel');
+const anterior = document.getElementById('anterior');
+const siguiente = document.getElementById('siguiente');
+
+function mostrarImagen(indice) {
+    imagenCarrusel.src = imagenes[indice];
+}
+
+siguiente.addEventListener('click', () => {
+    indiceActual = (indiceActual + 1) % imagenes.length;
+    mostrarImagen(indiceActual);
+});
+
+anterior.addEventListener('click', () => {
     indiceActual = (indiceActual - 1 + imagenes.length) % imagenes.length;
-    actualizarImagen();
-  });
-  
-  actualizarImagen();
-  
+    mostrarImagen(indiceActual);
+});
+
+// Mostrar la primera imagen al cargar
+mostrarImagen(indiceActual);
