@@ -1,74 +1,94 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #14143c;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
     margin: 0;
     padding: 0;
-    color: white;
+    min-height: 100vh;
+    background-color: #14143c;
+    font-family: Arial, sans-serif;
 }
 
+/* HEADER ------------------------------------------------------*/
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
     background-color: #000000;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav {
-    background-color: #142864;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
 }
 
-nav li {
-    margin: 0 15px;
+nav ul li {
+    margin: 0 20px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
+/* HEADER------------------------------------------------------ */
 
-nav a:hover {
-    color: #142850;
-}
-
-#carrusel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
-#carrusel img {
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    background-color: #142878;
+/* MAIN-------------------------------------------------------- */
+h1 {
     color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #141450;
+.carrousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
 }
+
+.carrousel-images {
+    display: flex;
+    overflow: hidden;
+}
+
+button.anterior, button.siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #142850;
+    color: white;
+}
+
+button.anterior {
+    left: 10px;
+}
+
+button.siguiente {
+    right: 10px;
+}
+/* MAIN --------------------------------------------------------*/
 
 footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000; 
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 10px 0;
 }
+
+/*
+z-index: 1000 asegura que el header y el footer se mantengan 
+por encima de otros elementos.
+
+position: fixed en el header y footer asegura que se mantendrán 
+visibles en la parte superior e inferior de la página, respectivamente.
+*/
