@@ -73,6 +73,27 @@ button {
 button:hover {
     background-color: #142878;
 }
+
+#errores {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#errores p {
+    margin: 5px 0;
+}
+
+/* Estilos para los mensajes correctos */
+#resultado {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#resultado p {
+    margin: 5px 0;
+}
 /* MAIN --------------------------------------------------------*/
 
 
