@@ -39,17 +39,29 @@ nav ul li a {
 
 /* MAIN-------------------------------------------------------- */
 main {
-    margin-top: 70px; 
-    margin-bottom: 70px;
+    margin-top: 80px; 
+    margin-bottom: 95px;
 }
 
-h1, h2 {
-    font-size: 24px; 
+h1 {
+    font-size: 28px;
     text-align: center;
-    line-height: 1.5;
-    margin-bottom: 20PX;
+    color: white;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: black;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
     color: white;
 }
+
 
 .contenido-articulo {
     display: flex;
@@ -59,19 +71,11 @@ h1, h2 {
     margin: 10px;
 }
 
-.columna {
+.tomo {
     flex: 1;
     background-color: #142850;
     padding: 10px;
     border-radius: 5px;
-}
-
-.columna p {
-    text-align: justify; /* Justifica el texto para una apariencia más elegante */
-    line-height: 1.6; /* Mejora la legibilidad con un mayor interlineado */
-    margin-bottom: 15px; /* Añade espacio entre párrafos */
-    color: white; /* Asegura que el texto sea legible */
-    font-size: 16px; /* Tamaño de fuente adecuado */
 }
 
 /* MAIN-------------------------------------------------------- */
