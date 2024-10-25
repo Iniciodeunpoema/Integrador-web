@@ -20,6 +20,22 @@ header {
     font-size: 16px;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 /* HEADER------------------------------------------------------ */
 
 /* MAIN-------------------------------------------------------- */
