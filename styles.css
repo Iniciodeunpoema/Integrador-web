@@ -70,7 +70,8 @@ p {
 .carrousel-imagenes {
     display: flex;
     width: 100%;
-    max-height: 65vh;
+    min-height: 380px;
+    max-height: 60vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,35 +96,6 @@ button.siguiente {
     right: 0px;
 }
 
-/* Media Queries para pantallas medianas y grandes */
-@media (min-width: 1024px) {
-    .carrousel-imagenes {
-        height: 80vh; /* Mayor altura en pantallas grandes */
-    }
-}
-
-@media (min-width: 1400px) {
-    .carrousel-imagenes {
-        height: 90vh; /* Aún mayor altura para pantallas muy grandes */
-    }
-}
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .carrousel-imagenes {
-        height: 40vh; /* Reduce la altura del carrusel en pantallas pequeñas */
-    }
-
-    button.anterior, button.siguiente {
-        padding: 8px; /* Ajustamos el tamaño de los botones en móviles */
-    }
-}
-
-@media (max-width: 480px) {
-    .carrousel-imagenes {
-        height: 35vh; /* Más pequeño aún en dispositivos muy pequeños */
-    }
-}
 /* carrousel */
 
 /* articulo */
